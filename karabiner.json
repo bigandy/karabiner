@@ -150,10 +150,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open https://twitter.com"
+                    "shell_command": "open -a \"Firefox Nightly\" https://twitter.com"
                   }
                 ],
-                "description": "Open https://twitter.com",
+                "description": "Open https://twitter.com in private mode",
                 "type": "basic",
                 "from": {
                   "key_code": "t",
@@ -174,10 +174,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open https://indieweb.social/"
+                    "shell_command": "open -a \"Firefox Nightly\" https://indieweb.social/"
                   }
                 ],
-                "description": "Open https://indieweb.social/",
+                "description": "Open https://indieweb.social/ in private mode",
                 "type": "basic",
                 "from": {
                   "key_code": "i",
@@ -198,10 +198,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open https://bbc.co.uk"
+                    "shell_command": "open -a \"Firefox Nightly\" https://bbc.co.uk"
                   }
                 ],
-                "description": "Open https://bbc.co.uk",
+                "description": "Open https://bbc.co.uk in private mode",
                 "type": "basic",
                 "from": {
                   "key_code": "b",
@@ -222,10 +222,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open https://bbc.co.uk/sport"
+                    "shell_command": "open -a \"Firefox Nightly\" https://bbc.co.uk/sport"
                   }
                 ],
-                "description": "Open https://bbc.co.uk/sport",
+                "description": "Open https://bbc.co.uk/sport in private mode",
                 "type": "basic",
                 "from": {
                   "key_code": "s",
@@ -246,13 +246,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -na \"Google Chrome\" --args -incognito https://bbc.co.uk/"
+                    "shell_command": "open -a \"Firefox Nightly\" https://github.com/bigandy"
                   }
                 ],
-                "description": "Open https://bbc.co.uk/ in private mode",
+                "description": "Open https://github.com/bigandy in private mode",
                 "type": "basic",
                 "from": {
-                  "key_code": "f",
+                  "key_code": "g",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -393,30 +393,6 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Notion Calendar.app'"
-                  }
-                ],
-                "description": "Open -a 'Notion Calendar.app'",
-                "type": "basic",
-                "from": {
-                  "key_code": "c",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_o",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
                     "shell_command": "open -a 'Visual Studio Code.app'"
                   }
                 ],
@@ -424,30 +400,6 @@
                 "type": "basic",
                 "from": {
                   "key_code": "v",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_o",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
-                    "shell_command": "open -a 'Discord.app'"
-                  }
-                ],
-                "description": "Open -a 'Discord.app'",
-                "type": "basic",
-                "from": {
-                  "key_code": "d",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -544,6 +496,30 @@
                 "type": "basic",
                 "from": {
                   "key_code": "t",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -a 'Beeper.app'"
+                  }
+                ],
+                "description": "Open -a 'Beeper.app'",
+                "type": "basic",
+                "from": {
+                  "key_code": "b",
                   "modifiers": {
                     "optional": [
                       "any"

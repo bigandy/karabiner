@@ -5,7 +5,7 @@ import {
   app,
   open,
   rectangle,
-  openPrivately,
+  openInFirefoxNightly,
 } from "./utils";
 
 const rules: KarabinerRules[] = [
@@ -67,23 +67,22 @@ const rules: KarabinerRules[] = [
     ),
     // b = "B"rowse
     b: {
-      t: open("https://twitter.com"),
-      i: open("https://indieweb.social/"),
-      b: open("https://bbc.co.uk"),
-      s: open("https://bbc.co.uk/sport"),
-      f: openPrivately("https://bbc.co.uk/"),
+      t: openInFirefoxNightly("https://twitter.com"),
+      i: openInFirefoxNightly("https://indieweb.social/"),
+      b: openInFirefoxNightly("https://bbc.co.uk"),
+      s: openInFirefoxNightly("https://bbc.co.uk/sport"),
+      g: openInFirefoxNightly("https://github.com/bigandy"),
     },
     // o = "Open" applications
     o: {
       1: app("1Password"),
       g: app("Google Chrome"),
-      c: app("Notion Calendar"),
       v: app("Visual Studio Code"),
-      d: app("Discord"),
       n: app("Notion"),
       w: app("Warp"),
       f: app("Firefox Nightly"),
       t: app("Tidal"),
+      b: app("Beeper"),
     },
 
     // w = "Window" via rectangle.app
