@@ -62,9 +62,6 @@ const rules: KarabinerRules[] = [
     ],
   },
   ...createHyperSubLayers({
-    spacebar: open(
-      "raycast://extensions/stellate/mxstbr-commands/create-notion-todo"
-    ),
     // b = "B"rowse
     b: {
       o: open("https://outlook.office.com/mail"),
@@ -73,6 +70,7 @@ const rules: KarabinerRules[] = [
       b: openInFirefoxNightly("https://bbc.co.uk"),
       s: openInFirefoxNightly("https://bbc.co.uk/sport"),
       g: openInFirefoxNightly("https://github.com/bigandy"),
+      c: openInFirefoxNightly("https://codepen.io/pen"),
     },
     // o = "Open" applications
     o: {
