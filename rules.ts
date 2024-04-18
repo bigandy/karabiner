@@ -67,6 +67,7 @@ const rules: KarabinerRules[] = [
     ),
     // b = "B"rowse
     b: {
+      o: open("https://outlook.office.com/mail"),
       t: openInFirefoxNightly("https://twitter.com"),
       i: openInFirefoxNightly("https://indieweb.social/"),
       b: openInFirefoxNightly("https://bbc.co.uk"),

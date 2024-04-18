@@ -150,6 +150,30 @@
               {
                 "to": [
                   {
+                    "shell_command": "open https://outlook.office.com/mail"
+                  }
+                ],
+                "description": "Open https://outlook.office.com/mail",
+                "type": "basic",
+                "from": {
+                  "key_code": "o",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_b",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
                     "shell_command": "open -a \"Firefox Nightly\" https://twitter.com"
                   }
                 ],
