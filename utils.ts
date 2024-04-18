@@ -163,6 +163,17 @@ export function open(what: string): LayerCommand {
   };
 }
 
+export function openPrivately(url: string): LayerCommand {
+  return {
+    to: [
+      {
+        shell_command: `open -na "Google Chrome" --args -incognito ${url}`,
+      },
+    ],
+    description: `Open ${url} in private mode`,
+  };
+}
+
 /**
  * Shortcut for managing window sizing with Rectangle
  */

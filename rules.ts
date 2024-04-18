@@ -1,6 +1,12 @@
 import fs from "fs";
 import { KarabinerRules } from "./types";
-import { createHyperSubLayers, app, open, rectangle } from "./utils";
+import {
+  createHyperSubLayers,
+  app,
+  open,
+  rectangle,
+  openPrivately,
+} from "./utils";
 
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
@@ -62,11 +68,10 @@ const rules: KarabinerRules[] = [
     // b = "B"rowse
     b: {
       t: open("https://twitter.com"),
-      // Quarterly "P"lan
-      p: open("https://qrtr.ly/plan"),
-      y: open("https://news.ycombinator.com"),
-      f: open("https://facebook.com"),
-      r: open("https://reddit.com"),
+      i: open("https://indieweb.social/"),
+      b: open("https://bbc.co.uk"),
+      s: open("https://bbc.co.uk/sport"),
+      f: openPrivately("https://bbc.co.uk/"),
     },
     // o = "Open" applications
     o: {
@@ -75,28 +80,10 @@ const rules: KarabinerRules[] = [
       c: app("Notion Calendar"),
       v: app("Visual Studio Code"),
       d: app("Discord"),
-      s: app("Slack"),
-      e: app("Superhuman"),
       n: app("Notion"),
-      t: app("Warp"),
-      // Open todo list managed via *H*ypersonic
-      h: open(
-        "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
-      ),
-      z: app("zoom.us"),
-      // "M"essages
-      m: app("Texts"),
-      f: app("Finder"),
-      r: app("Texts"),
-      // "i"Message
-      i: app("Texts"),
-      p: app("Spotify"),
-      a: app("iA Presenter"),
-      // "W"hatsApp has been replaced by Texts
-      w: open("Texts"),
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
-      ),
+      w: app("Warp"),
+      f: app("Firefox Nightly"),
+      t: app("Tidal"),
     },
 
     // w = "Window" via rectangle.app
