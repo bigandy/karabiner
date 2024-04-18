@@ -174,6 +174,17 @@ export function openPrivately(url: string): LayerCommand {
   };
 }
 
+export function openInFirefoxNightly(url: string): LayerCommand {
+  return {
+    to: [
+      {
+        shell_command: `open -a "Firefox Nightly" ${url}`,
+      },
+    ],
+    description: `Open ${url} in private mode`,
+  };
+}
+
 /**
  * Shortcut for managing window sizing with Rectangle
  */
