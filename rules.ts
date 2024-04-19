@@ -6,7 +6,10 @@ import {
   open,
   rectangle,
   openInFirefoxNightly,
+  startVPN,
 } from "./utils";
+
+import { config } from "./config";
 
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
@@ -161,6 +164,7 @@ const rules: KarabinerRules[] = [
 
     // s = "System"
     s: {
+      v: startVPN(config.vpnName),
       u: {
         to: [
           {
@@ -220,23 +224,6 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      // Turn on Elgato KeyLight
-      y: {
-        to: [
-          {
-            shell_command: `curl -H 'Content-Type: application/json' --request PUT --data '{ "numberOfLights": 1, "lights": [ { "on": 1, "brightness": 100, "temperature": 215 } ] }' http://192.168.8.84:9123/elgato/lights`,
-          },
-        ],
-      },
-      h: {
-        to: [
-          {
-            shell_command: `curl -H 'Content-Type: application/json' --request PUT --data '{ "numberOfLights": 1, "lights": [ { "on": 0, "brightness": 100, "temperature": 215 } ] }' http://192.168.8.84:9123/elgato/lights`,
-          },
-        ],
-      },
-      // "D"o not disturb toggle
-      d: open(`raycast://extensions/yakitrak/do-not-disturb/toggle`),
     },
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand

@@ -185,6 +185,19 @@ export function openInFirefoxNightly(url: string): LayerCommand {
   };
 }
 
+export function startVPN(vpnName: string): LayerCommand {
+  if (!vpnName) throw new Error("No VPN name provided");
+
+  return {
+    to: [
+      {
+        shell_command: `/usr/local/bin/vpnutil start "${vpnName}"`,
+      },
+    ],
+    description: `Start VPN`,
+  };
+}
+
 /**
  * Shortcut for managing window sizing with Rectangle
  */
