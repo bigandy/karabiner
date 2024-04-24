@@ -2,7 +2,7 @@
 
 ## Installation
 
-- mv config.example.ts config.ts
+- cp config.example.ts config.ts
 
 # @mxstbr's Karabiner Elements configuration
 

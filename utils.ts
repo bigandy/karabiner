@@ -186,8 +186,6 @@ export function openInFirefoxNightly(url: string): LayerCommand {
 }
 
 export function startVPN(vpnName: string): LayerCommand {
-  if (!vpnName) throw new Error("No VPN name provided");
-
   return {
     to: [
       {

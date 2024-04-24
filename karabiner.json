@@ -1046,7 +1046,7 @@
               {
                 "to": [
                   {
-                    "shell_command": "/usr/local/bin/vpnutil start \"pfSense IKEv2\""
+                    "shell_command": "/usr/local/bin/vpnutil start \"\""
                   }
                 ],
                 "description": "Start VPN",
