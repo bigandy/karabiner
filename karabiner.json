@@ -116,30 +116,6 @@
               {
                 "to": [
                   {
-                    "shell_command": "open https://outlook.office.com/mail"
-                  }
-                ],
-                "description": "Open https://outlook.office.com/mail",
-                "type": "basic",
-                "from": {
-                  "key_code": "o",
-                  "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
-                  }
-                },
-                "conditions": [
-                  {
-                    "type": "variable_if",
-                    "name": "hyper_sublayer_b",
-                    "value": 1
-                  }
-                ]
-              },
-              {
-                "to": [
-                  {
                     "shell_command": "open -a \"Firefox Nightly\" https://twitter.com"
                   }
                 ],
@@ -188,10 +164,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a \"Firefox Nightly\" https://bbc.co.uk"
+                    "shell_command": "open -a \"Firefox Nightly\" https://bbc.com"
                   }
                 ],
-                "description": "Open https://bbc.co.uk in private mode",
+                "description": "Open https://bbc.com in private mode",
                 "type": "basic",
                 "from": {
                   "key_code": "b",
@@ -212,10 +188,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a \"Firefox Nightly\" https://bbc.co.uk/sport"
+                    "shell_command": "open -a \"Firefox Nightly\" https://bbc.com/sport"
                   }
                 ],
-                "description": "Open https://bbc.co.uk/sport in private mode",
+                "description": "Open https://bbc.com/sport in private mode",
                 "type": "basic",
                 "from": {
                   "key_code": "s",
@@ -384,7 +360,7 @@
                 "description": "Open -a 'Google Chrome.app'",
                 "type": "basic",
                 "from": {
-                  "key_code": "g",
+                  "key_code": "c",
                   "modifiers": {
                     "optional": [
                       "any"
@@ -498,13 +474,13 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Tidal.app'"
+                    "shell_command": "open -a 'Spotify.app'"
                   }
                 ],
-                "description": "Open -a 'Tidal.app'",
+                "description": "Open -a 'Spotify.app'",
                 "type": "basic",
                 "from": {
-                  "key_code": "t",
+                  "key_code": "s",
                   "modifiers": {
                     "optional": [
                       "any"

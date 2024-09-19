@@ -67,24 +67,24 @@ const rules: KarabinerRules[] = [
   ...createHyperSubLayers({
     // b = "B"rowse
     b: {
-      o: open("https://outlook.office.com/mail"),
+      // o: open("https://outlook.office.com/mail"),
       t: openInFirefoxNightly("https://twitter.com"),
       i: openInFirefoxNightly("https://indieweb.social/"),
-      b: openInFirefoxNightly("https://bbc.co.uk"),
-      s: openInFirefoxNightly("https://bbc.co.uk/sport"),
+      b: openInFirefoxNightly("https://bbc.com"),
+      s: openInFirefoxNightly("https://bbc.com/sport"),
       g: openInFirefoxNightly("https://github.com/bigandy"),
       c: openInFirefoxNightly("https://codepen.io/pen"),
     },
     // o = "Open" applications
     o: {
       1: app("1Password"),
-      g: app("Google Chrome"),
+      c: app("Google Chrome"),
       v: app("Visual Studio Code"),
       n: app("Notion"),
       w: app("Warp"),
       f: app("Firefox Nightly"),
-      t: app("Tidal"),
-      b: app("Beeper"),
+      s: app("Spotify"),
+      // b: app("Beeper"),
     },
 
     // w = "Window" via rectangle.app
